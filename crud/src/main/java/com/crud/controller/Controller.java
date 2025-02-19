@@ -14,7 +14,7 @@ public class Controller {
     private Repository repo;
     @GetMapping
     public String index(){
-        return "CONECTADO";
+        return "CONECTADO hola";
     }
 
     @GetMapping("/personas")
@@ -45,7 +45,7 @@ public class Controller {
     }
 
     @GetMapping("Buscar/{id}")
-    
+
 
     public Optional<Persona> find(@PathVariable Long id){
         return repo.findById(id);
