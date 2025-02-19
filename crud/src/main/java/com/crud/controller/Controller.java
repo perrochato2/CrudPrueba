@@ -14,7 +14,7 @@ public class Controller {
     private Repository repo;
     @GetMapping
     public String index(){
-        return "CONECTADO hola";
+        return "CONECTADO";
     }
 
     @GetMapping("/personas")
